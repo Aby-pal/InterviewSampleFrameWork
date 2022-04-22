@@ -11,7 +11,7 @@
 
 	  	<classes>            
                   
-                 <class name="interviewsampleframework.tests.TestCase01_SearchAProductFromCoach" />
+                 <class name="interviewsampleframework.tests.ExecuteSampleTest" />
                 <!--   <class name="TestCase02_BasicShoppingEndToEndFlowUsingMasterCard" />
                    <class name="TestCase03_BasicShoppingEndToEndFlowUsingAmericanExpress" />
                     <class name="TestCase04_BasicShoppingEndToEndFlowUsingVisa" />

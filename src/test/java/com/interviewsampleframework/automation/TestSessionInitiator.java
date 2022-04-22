@@ -21,6 +21,7 @@ import com.interviewsampleframework.automation.utils.YamlReader;
 import interviewsampleframework.keywords.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.ITestResult;
 import org.testng.Reporter;
 
 
@@ -236,4 +237,9 @@ public class TestSessionInitiator {
 	public String getCurrentURL() {
 		return driver.getCurrentUrl();
 	}
+
+	public void takeScreenShotOnException(ITestResult result) {
+		takescreenshot.takeScreenShotOnException(result);
+	}
+
 }

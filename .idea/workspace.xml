@@ -44,6 +44,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExecuteSampleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Coach-test-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interviewsampleframework.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="interviewsampleframework.tests" />
+      <option name="MAIN_CLASS_NAME" value="interviewsampleframework.tests.ExecuteSampleTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.ExecuteSampleTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
