@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Coach Automated Tests" preserve-order="true" thread-count="1">
+
+<test name="Coach Smoke">
+
+       <groups>
+          <run >
+            <include name="desktop"></include>
+          </run>
+        </groups>
+
+	  	<classes>            
+                  
+                 <class name="interviewsampleframework.tests.TestCase01_SearchAProductFromCoach" />
+                <!--   <class name="TestCase02_BasicShoppingEndToEndFlowUsingMasterCard" />
+                   <class name="TestCase03_BasicShoppingEndToEndFlowUsingAmericanExpress" />
+                    <class name="TestCase04_BasicShoppingEndToEndFlowUsingVisa" />
+                     <class name="TestCase05_BasicShoppingEndToEndFlowUsingCoachGifts" />
+                      <class name="TestCase06_BasicShoppingEndToEndFlowUsingPayPal" />
+                       <class name="TestCase07_BasicShoppingEndToEndFlowUsingJcb" />
+ -->
+		</classes>
+			
+</test>
+</suite>

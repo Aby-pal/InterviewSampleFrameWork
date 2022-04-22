@@ -1,0 +1,91 @@
+ProjectName: eReader QA
+base_url: 'https://hbpreader-qa.firebaseapp.com'
+login_title: 'Harvard Business Publishing Reader'
+cb_login_url: https://cb.rc.hbsp.harvard.edu/cbmp/login
+CoursePackName: TEST_2200_RC
+ePub: Atlantic Computer_A Bundle of Pricing Options
+users:
+ admin:
+  username: HBP_ADMIN
+  password: Welcome1
+ teacher:
+  username: teacher_qa
+  password: Welcome1
+ student:
+  username1: student_qa
+  password2: Welcome1
+  username2: rc_ereader_automation_20April2016
+  password2: Welcome1
+  username3: rc_ereader_automation_01_20April2016
+  password3: Welcome1
+
+Resolutions:
+ iPhone5s_x: 320
+ iPhone5s_y: 568
+ 
+foot_note_links:
+ link1_page: 4
+ link2_page: 7
+ link3_page: 8
+ link4_page: 0
+ link5_page: 12
+ link6_page: 12
+ link_a_page: 18
+ link_b_page: 18
+ 
+topic:
+ one: Title Page
+ two: Atlantic Computer_A Bundle of Pricing Options
+ 
+subtopics: 
+ sub_topic1_one: Copyright
+ sub_topic2_one: I. Overview
+ sub_topic2_two: II. The Necessary Background
+ sub_topic2_three: III. Marketing the Tronn Loaded with the PESA
+ sub_topic2_four: IV. Planning the Strategy
+ sub_topic2_five: Exhibits
+ sub_topic2_five_one: Exhibit 1 Projected Market Volumes by Segment (in units)
+ sub_topic2_five_two: Exhibit 2 Test Results from PESA Software on Tronn Servers on a Variety of Application Types ,
+ sub_topic2_five_three: Exhibit 3 Salient Pricing Information
+ sub_topic2_five_four: Exhibit 4 Customer Profiles
+ sub_topic2_six: Footnotes
+ 
+pixel_diff_scrubber: 43
+
+pnumber_For_PageNumber_2: 3
+pnumber_For_PageNumber_3: 4
+pnumber_For_PageNumber_4: 6
+pnumber_For_PageNumber_5: 7
+pnumber_For_PageNumber_6: 9
+
+number_of_pages: 10
+
+icon_shapes:
+ round: shape-a
+ square: shape-b
+ triangle: shape-c
+ rhombus: shape-d
+ 
+color_codes:
+ blue: 97e4ff
+ green: a9ef9b
+ yellow: ffde60
+ pink: ffb1c2
+ yellow_rgb: rgb(255, 238, 172)
+ pink_rgb: rgb(255, 202, 214)
+ blue_rgb: rgb(202, 241, 255)
+ green_rgb: rgb(207, 246, 199)
+ 
+multiple_words:
+ word1: DayTraderJournal.com
+ word2: Matzer
+ word3: United
+ word4: MBA.
+ 
+color1: Blue
+color2: Green
+color3: Yellow
+color4: Pink
+      
+     
+  
