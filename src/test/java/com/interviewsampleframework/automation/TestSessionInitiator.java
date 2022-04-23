@@ -91,8 +91,10 @@ public class TestSessionInitiator {
 		Reporter.log("[INFO]: The Test: " + this.testname.toUpperCase() + " COMPLETED!"
 				+ "\n", true);
 		try {
-			driver.quit();
-			Thread.sleep(1000);// [INFO]: this to wait before you close every
+			driver.close();
+			driver.close();
+
+//			Thread.sleep(1000);// [INFO]: this to wait before you close every
 								// thing
 		} catch (Exception b) {
 			b.getMessage();

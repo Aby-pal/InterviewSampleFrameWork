@@ -41,8 +41,6 @@ public class SamplePage extends GetPage {
 
     public boolean verifyTelevisonOptionSelected(String currentUrL) {
         wait.waitForPageToLoadCompletely();
-        System.out.println("currentUrL " + currentUrL);
-        System.out.println("currentUrL.contains(\"television\") " + currentUrL.contains("television"));
         return currentUrL.contains("television");
     }
 
