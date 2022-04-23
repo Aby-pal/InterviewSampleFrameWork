@@ -1,46 +1,12 @@
 ProjectName: interviewsampleframework
 base_url: 'https://www.amazon.in/'
-card_1: 3095000000000034
-master_card_no: 5555555555554444
-product: BAGS
-gift_card_no: 7777016099446468
-gift_card_pin: 89974115
-email_paypal: sittesting1@hotmail.com
-password_pay_pal: coach450
-fname: Abhishek
-lname: Pal
-address: Street no 8
-zipcode: 10001
-phone_no: 8750079543
-
-
-cardtype:
- visa_card: 411111111111111
- visa_security: 222
- visa_security:
- master_card: 5555555555554444
- master_security: 111
- diner_club_card: 3059990000000006 
- dinner_club_security: 000
- american_express_card: 378282246310005
- american_security: 4444
- discover_card: 6011111111111117
- discover_security: 333
- jcb_card: 3530111333300000
- jcb_security: 555
- 
- 
-users:
-  user1:
-    username: abhishekpalsingh@qainfotech.com
-    password: Qait@123 	
-  user2:
-    username: anmolbagga@qainfotech.com
-    password: Qait@123
-
-    
-email:
-  recepients: abhishekpalsingh@qainfotech.com    
+hamburgerOption: 'TV, Appliances, Electronics'
+About_This_item:
+  point_1: "Resolution : 4K Ultra HD (3840 x 2160) Resolution | Refresh Rate : 120 Hertz"
+  point_2: "Connectivity: 4 HDMI ports to connect set top box, Blu-ray speakers or a gaming console | 2 USB ports to connect hard drives or other USB devices | One Connect Box for all your connectivity needs"
+  point_3: "Sound: 60 Watts Output | Powerful Speakers with Dolby Digital Plus"
+  point_4: "Smart TV Features : Prime Video, Hotstar, Netflix, Zee5 and many more | PC Mode | Universal Guide | Web Browser | Screen Mirroring"
+  point_5: "Display: 100% Color Volume | Quantum HDR | Quantum Processor | HLG | Mega Contrast | Ultimate UHD Dimming"
   
  
  
