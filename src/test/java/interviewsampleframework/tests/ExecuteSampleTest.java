@@ -1,6 +1,5 @@
 package interviewsampleframework.tests;
 
-
 import com.interviewsampleframework.automation.TestSessionInitiator;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -70,6 +69,22 @@ public class ExecuteSampleTest {
     public void TestStep06_SelectSecondProduct() {
         dsl.samplePage.selectSecondProduct();
         Assert.assertTrue(dsl.samplePage.verifyProductSelected(), "Unable to select product");
+    }
+
+    @Test(groups = {"desktop"}, dependsOnMethods = "TestStep05_SortProductResults")
+    public void TestStep07_VerifyAboutThisItemDetails() {
+        String Point_1 = YamlReader.getData("About_This_item.point_1");
+        String Point_2 = YamlReader.getData("About_This_item.point_2");
+        String Point_3 = YamlReader.getData("About_This_item.point_3");
+        String Point_4 = YamlReader.getData("About_This_item.point_4");
+        String Point_5 = YamlReader.getData("About_This_item.point_5");
+
+        Assert.assertEquals(Point_1, dsl.samplePage.getPoint1Details(), "Point 1 Mismatch");
+        Assert.assertEquals(Point_2, dsl.samplePage.getPoint2Details(), "Point 2 Mismatch");
+        Assert.assertEquals(Point_3, dsl.samplePage.getPoint3Details(), "Point 3 Mismatch");
+        Assert.assertEquals(Point_4, dsl.samplePage.getPoint4Details(), "Point 4 Mismatch");
+        Assert.assertEquals(Point_5, dsl.samplePage.getPoint5Details(), "Point 5 Mismatch");
+
     }
 
     @AfterClass(groups = {"desktop"})

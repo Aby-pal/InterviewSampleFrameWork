@@ -14,5 +14,6 @@ results_second_product                      xpath                           (//s
 section_buy                                 xpath                           //div[@id="buyBoxAccordion"]
 input_search                                css                             #twotabsearchtextbox
 header                                      tagName                         header
+list_bullets_points                         xpath                           //div[@id="feature-bullets"]//li//span[@class="a-list-item"]
 
                   

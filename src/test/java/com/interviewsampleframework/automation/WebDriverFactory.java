@@ -48,9 +48,4 @@ public class WebDriverFactory {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
-
-
-
-
-
 }
