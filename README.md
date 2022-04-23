@@ -5,7 +5,7 @@ Mobile. It also can give the support to test the same set of test cases with dif
 environments like dev, QA, prod. This framework can further integrated for cucumber(BDD) by adding an additional 
 layer on TestSessionInitiator. 
 
-##External dependencies
+## External dependencies
 
 For this project to run, you would need to install below 3 dependencies on your machine:
 
