@@ -481,7 +481,7 @@ public class BaseUi {
 	public String switchOnWindow() {
 		  try {
 		   String currentWindow = driver.getWindowHandle();
-			  System.out.println("first");
+//			  System.out.println("first");
 		   hardWait(3);
 		   System.out.println("Windows:"+driver.getWindowHandles().size());
 		   for (String s : driver.getWindowHandles())
