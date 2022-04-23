@@ -32,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="TestNG.ExecuteSampleTest (1)">
+  <component name="RunManager" selected="TestNG.ExecuteSampleTest (3)">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -45,6 +45,40 @@
       </method>
     </configuration>
     <configuration name="ExecuteSampleTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InterviewSampleFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interviewsampleframework.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="interviewsampleframework.tests" />
+      <option name="MAIN_CLASS_NAME" value="interviewsampleframework.tests.ExecuteSampleTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExecuteSampleTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InterviewSampleFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interviewsampleframework.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="interviewsampleframework.tests" />
+      <option name="MAIN_CLASS_NAME" value="interviewsampleframework.tests.ExecuteSampleTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExecuteSampleTest (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InterviewSampleFramework" />
       <extension name="coverage">
         <pattern>
@@ -80,7 +114,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ExecuteSampleTest (3)" />
         <item itemvalue="TestNG.ExecuteSampleTest (1)" />
+        <item itemvalue="TestNG.ExecuteSampleTest (2)" />
         <item itemvalue="TestNG.ExecuteSampleTest" />
       </list>
     </recent_temporary>
