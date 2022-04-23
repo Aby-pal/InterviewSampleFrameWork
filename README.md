@@ -2,7 +2,7 @@
 
 This is a base hybrid Automation framework. It can support multiple plaforms like  Windows, Mac, linux, 
 Mobile. It also can give the support to test the same set of test cases with different testdata on multiple 
-environments like dev, QA, prod. This framework can further integrated for cucumber(BDD) by adding an addition 
+environments like dev, QA, prod. This framework can further integrated for cucumber(BDD) by adding an additional 
 layer on TestSessionInitiator. 
 
 ##External dependencies
