@@ -1,5 +1,6 @@
 package com.interviewsampleframework.automation.utils;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -18,7 +19,7 @@ public class SeleniumWait{
     
     public SeleniumWait(WebDriver driver, int timeout) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, timeout);
+        this.wait = new WebDriverWait(driver, Duration.ofMillis(timeout));
         this.timeout = timeout;
     }
 
@@ -137,6 +138,7 @@ public class SeleniumWait{
     public void waitForPageToLoadCompletely() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By
                 .xpath("//*")));
+        hardWait(3);
     }
     
     public WebElement checkPresenceOfElementInDom(By loc)

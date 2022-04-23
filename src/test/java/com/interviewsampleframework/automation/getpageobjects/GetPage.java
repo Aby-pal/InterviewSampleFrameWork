@@ -6,9 +6,6 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.TouchAction;
 
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
@@ -598,20 +595,22 @@ public class GetPage extends BaseUi {
 
 	private By getBy(String locatorType, String locatorValue) {
 		switch (Locators.valueOf(locatorType)) {
-		case id:
-			return By.id(locatorValue);
-		case xpath:
-			return By.xpath(locatorValue);
-		case css:
-			return By.cssSelector(locatorValue);
-		case name:
-			return By.name(locatorValue);
-		case classname:
-			return By.className(locatorValue);
-		case linktext:
-			return By.linkText(locatorValue);
-		default:
-			return By.id(locatorValue);
+			case id:
+				return By.id(locatorValue);
+			case xpath:
+				return By.xpath(locatorValue);
+			case css:
+				return By.cssSelector(locatorValue);
+			case name:
+				return By.name(locatorValue);
+			case classname:
+				return By.className(locatorValue);
+			case linktext:
+				return By.linkText(locatorValue);
+			case tagName:
+				return By.tagName(locatorValue);
+			default:
+				return By.id(locatorValue);
 		}
 	}
 	
@@ -646,74 +645,6 @@ public class GetPage extends BaseUi {
 		js.executeScript("mobile: swipe", swipeObject);
 	}
 
-	public void swipeLeft(String elementToken, String replacement) {
-		By locator = getLocator(elementToken, replacement);
-		MobileElement element = (MobileElement) driver.findElement(locator);
-		int offset = 1;
-		Point p = element.getCenter();
-		Point location = element.getLocation();
-		Dimension size = element.getSize();
-		((AppiumDriver) driver).swipe(location.getX() + size.getWidth() - offset, p.getY(),
-				location.getX() + offset, p.getY(), 1000);
-	}
-
-	public void swipeRight(String elementToken, String replacement) {
-		By locator = getLocator(elementToken, replacement);
-
-		MobileElement element = (MobileElement) driver.findElement(locator);
-		int offset = 1;
-		Point p = element.getCenter();
-		Point location = element.getLocation();
-		Dimension size = element.getSize();
-		((AppiumDriver) driver).swipe(location.getX() + offset + 20, p.getY(), location.getX()
-				+ size.getWidth() - offset, p.getY(), 1000);
-	}
-   
-	public void orintation(){
-		//System.out.println(((AppiumDriver) webdriver).
-		System.out.println("starting ..........................");
-		wait.hardWait(4);
-		((AppiumDriver) webdriver).hideKeyboard();
-		System.out.println("HideKeyboard  completion");
-	//	webdriver.navigate().back();
-		wait.hardWait(4);
-		webdriver.navigate().back();
-		System.out.println("Back completion");
-
-		//((AppiumDriver) webdriver).rotate(ScreenOrientation.LANDSCAPE);
-		((AppiumDriver) webdriver).zoom(200,300);
-		System.out.println("Zoom completion");
-	//	((AppiumDriver) webdriver).hideKeyboard();	
-		//((AppiumDriver) webdriver).scrollTo("About");
-	
-		TouchAction touch = new TouchAction((AppiumDriver) webdriver);
-		touch.longPress(200, 200).perform();
-		System.out.println("long press worked");
-				
-	}
-   
-	public void swipe_screen_to_left()
-	{
-	
-	//((AppiumDriver) webdriver).swipe(50,600,600,600,2000);
-//		JavascriptExecutor js = (JavascriptExecutor) webdriver;
-//	    HashMap<String, Double> swipeObject = new HashMap<String, Double>();
-//	    swipeObject.put("startX", 0.95);
-//	    swipeObject.put("startY", 0.5);
-//	    swipeObject.put("endX", 0.05);
-//	    swipeObject.put("endY", 0.5);
-//	    swipeObject.put("duration", 1.8);
-//	    js.executeScript("mobile: swipe", swipeObject);
-	((AppiumDriver) webdriver).context("NATIVE_APP"); 
-		Dimension size = ((AppiumDriver) webdriver).manage().window().getSize(); 
-		int startx = (int) (size.width * 0.8); 
-		int endx = (int) (size.width * 0.20); 
-		int starty = size.height / 2; 
-	 ((AppiumDriver) webdriver).swipe(startx, starty, endx, starty, 1000);
-	System.out.println("swipe completion");
-		
-	// ((AppiumDriver) webdriver).
-	}
    
 	
 }

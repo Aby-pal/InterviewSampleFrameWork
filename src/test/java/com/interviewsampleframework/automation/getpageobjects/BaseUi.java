@@ -6,6 +6,7 @@ package com.interviewsampleframework.automation.getpageobjects;
 
 import static com.interviewsampleframework.automation.utils.ConfigPropertyReader.getProperty;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
@@ -165,7 +166,6 @@ public class BaseUi {
 	 * this method will get page url of current window and match it partially
 	 * with the param provided
 	 *
-	 * @param expectedPagetitle
 	 *            partial page title text
 	 */
 	protected void verifyPageUrlContains(String expectedPageUrl) {
@@ -310,7 +310,7 @@ public class BaseUi {
 	}
 	
 	protected Alert switchToAlert() {
-		WebDriverWait wait = new WebDriverWait(driver, 1);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(1));
 		return wait.until(ExpectedConditions.alertIsPresent());
 	}
 
@@ -325,6 +325,17 @@ public class BaseUi {
 		((JavascriptExecutor) driver).executeScript(
 				"arguments[0].scrollIntoView(true);", element);
 	}
+
+	protected void scrollAtTop(WebElement element) {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
+		wait.hardWait(3);
+	}
+
+	protected void scrollAtTop() {
+		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
+		wait.hardWait(3);
+	}
+
 
 	protected void hoverClick(WebElement element) {
 		Actions hoverClick = new Actions(driver);
@@ -470,7 +481,8 @@ public class BaseUi {
 	public String switchOnWindow() {
 		  try {
 		   String currentWindow = driver.getWindowHandle();
-		   hardWait(3000);
+			  System.out.println("first");
+		   hardWait(3);
 		   System.out.println("Windows:"+driver.getWindowHandles().size());
 		   for (String s : driver.getWindowHandles())
 		    driver.switchTo().window(s);

@@ -10,7 +10,7 @@ public class CompleteSmokeTest {
 	 @Test
 	    public void executeMethods() {
 	        List<String> file = new ArrayList<String>();
-	        file.add("smokeTest.xml");
+	        file.add("src/test/resources/testxml/smokeTest.xml");
 	        TestNG testNG = new TestNG();
 	        testNG.setTestSuites(file);
 	        testNG.setOutputDirectory("./test-output");
